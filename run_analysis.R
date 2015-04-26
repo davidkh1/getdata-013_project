@@ -31,9 +31,9 @@ subject_train <- read.table(paste(DIR, "train/subject_train.txt", sep="/"))
 X_train <- read.table(paste(DIR, "train/X_train.txt", sep="/"))
 y_train <- read.table(paste(DIR, "train/y_train.txt", sep="/"))
 # Activity labels
-y_train[,2] = activity_labels[y_train[,1]]
-names(y_train) = c("Activity_Code", "Activity_Label")
-names(subject_train) = "Subject"
+y_train[,2] <- activity_labels[y_train[,1]]
+names(y_train) <- c("Activity_Code", "Activity_Label")
+names(subject_train) <- "Subject"
 
 
 # Merge the training and the test sets to create one data set.
