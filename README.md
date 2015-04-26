@@ -11,4 +11,4 @@ Here are the data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 The tiny data format is described in [CodeBook](CodeBook.md) 
-The tiny data result file is created by [an R Script](run_analysis.R)
+The tiny data result file is created by an [R Script](run_analysis.R)
