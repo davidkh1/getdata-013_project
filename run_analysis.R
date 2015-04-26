@@ -10,7 +10,7 @@
 require("data.table")
 require("reshape2")
 
-rm(list=ls())
+# rm(list=ls())
 
 # 1. Read the data files:
 DIR = "UCI HAR Dataset"
