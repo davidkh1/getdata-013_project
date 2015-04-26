@@ -28,7 +28,14 @@ In addition to above files, there are directories containing raw signal data in 
 
 ##Output data format
 There are 82 parameters in output file, instead of original 561 parameters. The parameters were choosen from the original data if a parameter name has "mean" or "std" in its name.
-The output file has mean and standard deviation variables for following parameters, including all X, Y and Z axes:
+
+#####Fields:
 Subject - volunteer ID
-Activity_Code, Activity_Label: one of (1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING)
-tBodyAcc,  tGravityAcc, tBodyAccJerk, tBodyGyro, tBodyGyroJerk, tBodyAccMag, tGravityAccMag, ... - sensors measurements. The complete list of variables of each feature vector is available in 'features.txt' of original dataset.
+
+Activity_Code -  one of 1 to 6, described in Activity_Label 
+
+Activity_Label: one of (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+The output file has mean and standard deviation variables for following parameters, including all X, Y and Z axes, in SI unit system. All of them are processed sensors measurements. The complete list of variables (with attached "mean", "std", axes) of each feature vector is available in 'features.txt' of original dataset.
+
+tBodyAcc, tGravityAcc, tBodyAccJerk, tBodyGyro, tBodyGyroJerk, tBodyAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag, fBodyAcc, fBodyAccJerk, fBodyGyro, fBodyAccMag, fBodyBodyAccJerkMag, fBodyBodyGyroMag, fBodyBodyGyroJerkMag.
